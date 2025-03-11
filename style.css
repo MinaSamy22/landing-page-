@@ -459,51 +459,37 @@ ul li .a2:hover:before {
 
 /* Mobile phones */
 @media screen and (max-width: 576px) {
-  .hometext {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  
-  .hometext h1 {
-    font-size: 24px;
-  }
-  
-  .hometext p {
-    font-size: 65%;
-  }
-  
-  .homebtn1, .homebtn2 {
-    width: 80%;
-    max-width: 200px;
-  }
-  
-  .hlogo {
-    height: 350px;
-    width: 210px;
-  }
-  
-  .hlogoo, .hlogooo {
-    height: 175px;
-    width: 110px;
-    margin-right: -55px;
-    margin-left: -55px;
-  }
-  
-  .background-section {
-    height: 130%;
-  }
-}
-
-/* Small mobile phones */
-@media screen and (max-width: 375px) {
+    /* Other styles remain the same */
+    
+    .homelogo {
+      align-items: flex-end; /* Align items at the bottom */
+    }
+    
     .hlogo {
-      height: 300px;  /* Keep this value */
-      width: 180px;
+      height: 350px;
+      width: 210px;
+      margin-top: 50px; /* Add top margin to raise the middle phone */
     }
     
     .hlogoo, .hlogooo {
-      height: 300px;  /* Match height of middle image */
-      width: 188px;   /* Maintain aspect ratio */
+      height: 350px;
+      width: 220px;
+      margin-right: -110px;
+      margin-left: -110px;
+    }
+  }
+  
+  /* Small mobile phones */
+  @media screen and (max-width: 375px) {
+    .hlogo {
+      height: 300px;
+      width: 180px;
+      margin-top: 40px; /* Adjust for smaller screens */
+    }
+    
+    .hlogoo, .hlogooo {
+      height: 300px;
+      width: 188px;
       margin-right: -94px;
       margin-left: -94px;
     }
