@@ -397,13 +397,15 @@ ul li .a2:hover:before {
   }
   
   .hlogo {
-    height: 560px;
-    width: 336px;
+    height: 350px;
+    width: 210px;
   }
   
   .hlogoo, .hlogooo {
-    height: 280px;
-    width: 176px;
+    height: 350px;  /* Match height of middle image */
+    width: 220px;   /* Maintain aspect ratio */
+    margin-right: -110px;
+    margin-left: -110px;
   }
   
   .background-section {
@@ -494,18 +496,18 @@ ul li .a2:hover:before {
 
 /* Small mobile phones */
 @media screen and (max-width: 375px) {
-  .hlogo {
-    height: 300px;
-    width: 180px;
+    .hlogo {
+      height: 300px;  /* Keep this value */
+      width: 180px;
+    }
+    
+    .hlogoo, .hlogooo {
+      height: 300px;  /* Match height of middle image */
+      width: 188px;   /* Maintain aspect ratio */
+      margin-right: -94px;
+      margin-left: -94px;
+    }
   }
-  
-  .hlogoo, .hlogooo {
-    height: 150px;
-    width: 94px;
-    margin-right: -47px;
-    margin-left: -47px;
-  }
-}
 
 /*--------------- Features Section ---------------------*/
 .features {
