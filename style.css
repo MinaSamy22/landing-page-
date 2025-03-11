@@ -475,16 +475,27 @@ ul li .a2:hover:before {
     max-width: 200px;
   }
   
-  .hlogo {
-    height: 175px; /* Adjusted to match the height of hlogoo and hlogooo */
-    width: auto; /* Maintain aspect ratio */
+  /* Make all logos the same height and remove animations */
+  .hlogo, .hlogoo, .hlogooo {
+    height: 175px;
+    animation: none;
+    opacity: 1;
+    transform: none;
   }
   
-  .hlogoo, .hlogooo {
-    height: 175px;
-    width: 110px;
-    margin-right: -55px;
-    margin-left: -55px;
+  .hlogo {
+    width: auto;
+    z-index: 2;
+  }
+  
+  .hlogoo {
+    width: auto;
+    margin-right: -40px;
+  }
+  
+  .hlogooo {
+    width: auto;
+    margin-left: -40px;
   }
   
   .background-section {
@@ -494,19 +505,19 @@ ul li .a2:hover:before {
 
 /* Small mobile phones */
 @media screen and (max-width: 375px) {
-  .hlogo {
-    height: 150px; /* Adjusted to match the height of hlogoo and hlogooo */
-    width: auto; /* Maintain aspect ratio */
+  /* Keep all logos the same height */
+  .hlogo, .hlogoo, .hlogooo {
+    height: 150px;
   }
   
-  .hlogoo, .hlogooo {
-    height: 150px;
-    width: 94px;
-    margin-right: -47px;
-    margin-left: -47px;
+  .hlogoo {
+    margin-right: -35px;
+  }
+  
+  .hlogooo {
+    margin-left: -35px;
   }
 }
-
 /*--------------- Features Section ---------------------*/
 .features {
     background-color: #ffffff; /* Light background for contrast */
