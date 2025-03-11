@@ -475,15 +475,27 @@ ul li .a2:hover:before {
     max-width: 200px;
   }
   
-  .hlogo {
-    height: 175px;  /* Changed from 350px to match .hlogoo and .hlogooo */
-    width: 105px;   /* Adjusted width proportionally to maintain aspect ratio */
+  /* Updated logo styles to make all logos the same height and move them down */
+  .homelogo {
+    margin-top: 40px; /* Increased margin-top to move logos down */
   }
   
-  .hlogoo, .hlogooo {
-    height: 175px;
+  .hlogo, .hlogoo, .hlogooo {
+    height: 175px; /* All logos now have the same height */
+    margin-top: 20px; /* Additional spacing to move down */
+  }
+  
+  .hlogo {
+    width: 140px; /* Adjusted width to maintain aspect ratio */
+  }
+  
+  .hlogoo {
     width: 140px;
     margin-right: -55px;
+  }
+  
+  .hlogooo {
+    width: 140px;
     margin-left: -55px;
   }
   
@@ -494,15 +506,26 @@ ul li .a2:hover:before {
 
 /* Small mobile phones */
 @media screen and (max-width: 375px) {
-  .hlogo {
-    height: 300px;
-    width: 180px;
+  .homelogo {
+    margin-top: 30px; /* Adjusted for smaller screens */
   }
   
-  .hlogoo, .hlogooo {
-    height: 150px;
+  .hlogo, .hlogoo, .hlogooo {
+    height: 150px; /* All logos have the same height */
+    margin-top: 15px; /* Slightly less spacing for smaller screens */
+  }
+  
+  .hlogo {
+    width: 100px; /* Adjusted width to maintain aspect ratio */
+  }
+  
+  .hlogoo {
     width: 100px;
     margin-right: -47px;
+  }
+  
+  .hlogooo {
+    width: 100px;
     margin-left: -47px;
   }
 }
