@@ -495,8 +495,8 @@ ul li .a2:hover:before {
 /* Small mobile phones */
 @media screen and (max-width: 375px) {
   .hlogo {
-    height: 0px;
-    width: 375px;
+    height: 5000px;
+    width: 175px;
   }
   
   .hlogoo, .hlogooo {
