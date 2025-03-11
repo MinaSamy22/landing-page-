@@ -397,7 +397,7 @@ ul li .a2:hover:before {
   }
   
   .hlogo {
-    height: 960px;
+    height: 560px;
     width: 336px;
   }
   
@@ -414,7 +414,7 @@ ul li .a2:hover:before {
 /* Medium tablets */
 @media screen and (max-width: 992px) {
   .hlogo {
-    height: 990px;
+    height: 490px;
     width: 294px;
   }
   
@@ -476,7 +476,7 @@ ul li .a2:hover:before {
   }
   
   .hlogo {
-    height: 400px;
+    height: 350px;
     width: 210px;
   }
   
@@ -495,8 +495,8 @@ ul li .a2:hover:before {
 /* Small mobile phones */
 @media screen and (max-width: 375px) {
   .hlogo {
-    height: 500px;
-    width: 175px;
+    height: 300px;
+    width: 180px;
   }
   
   .hlogoo, .hlogooo {
