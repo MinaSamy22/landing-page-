@@ -184,12 +184,6 @@ ul li .a2:hover:before {
     transform: scaleX(1);
 }
 
-/*----------------Basic setup---------------------*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 /*--------------- Home Section ---------------------*/
 .home {
