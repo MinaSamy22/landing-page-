@@ -476,28 +476,26 @@ ul li .a2:hover:before {
   }
   
   .hlogo {
-    height: 450px;
+    height: 350px;
     width: 210px;
-    margin-top: 20px;
-
   }
   
   .hlogoo, .hlogooo {
-    height: 175px;
+    height: 125px;
     width: 110px;
     margin-right: -55px;
     margin-left: -55px;
   }
   
   .background-section {
-    height: 180%;
+    height: 130%;
   }
 }
 
 /* Small mobile phones */
 @media screen and (max-width: 375px) {
   .hlogo {
-    height: 400px;
+    height: 300px;
     width: 180px;
   }
   
