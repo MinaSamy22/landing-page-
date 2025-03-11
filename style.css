@@ -311,12 +311,33 @@ ul li .a2:hover:before {
   overflow: visible;
 }
 
-.hlogo {
+.hlogo, .hlogoo, .hlogooo {
   animation: float 3s ease-in-out infinite;
   position: relative;
+}
+
+.hlogo {
   height: 700px;
   width: 420px;
   z-index: 2;
+}
+
+.hlogoo {
+  height: 350px;
+  width: 220px;
+  margin-right: -110px;
+  z-index: 1;
+  animation: slideFromTop 1.5s ease-out forwards, float 3s ease-in-out infinite 1.5s;
+  opacity: 0;
+}
+
+.hlogooo {
+  height: 350px;
+  width: 220px;
+  margin-left: -110px;
+  z-index: 1;
+  animation: slideFromBottom 1.5s ease-out forwards, float 3s ease-in-out infinite 1.5s;
+  opacity: 0;
 }
 
 /* Animation for Logo */
@@ -326,6 +347,30 @@ ul li .a2:hover:before {
   }
   50% {
       transform: translateY(-23px);
+  }
+}
+
+/* Animation for second photo (slide from top) */
+@keyframes slideFromTop {
+  0% {
+      transform: translateY(-100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/* Animation for third photo (slide from bottom) */
+@keyframes slideFromBottom {
+  0% {
+      transform: translateY(100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
   }
 }
 
@@ -354,6 +399,11 @@ ul li .a2:hover:before {
   .hlogo {
     height: 560px;
     width: 336px;
+  }
+  
+  /* Hide secondary logo images on responsive layouts */
+  .hlogoo, .hlogooo {
+    display: none;
   }
   
   .background-section {
