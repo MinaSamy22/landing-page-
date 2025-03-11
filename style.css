@@ -311,33 +311,12 @@ ul li .a2:hover:before {
   overflow: visible;
 }
 
-.hlogo, .hlogoo, .hlogooo {
+.hlogo {
   animation: float 3s ease-in-out infinite;
   position: relative;
-}
-
-.hlogo {
   height: 700px;
   width: 420px;
   z-index: 2;
-}
-
-.hlogoo {
-  height: 350px;
-  width: 220px;
-  margin-right: -110px;
-  z-index: 1;
-  animation: slideFromTop 1.5s ease-out forwards, float 3s ease-in-out infinite 1.5s;
-  opacity: 0;
-}
-
-.hlogooo {
-  height: 350px;
-  width: 220px;
-  margin-left: -110px;
-  z-index: 1;
-  animation: slideFromBottom 1.5s ease-out forwards, float 3s ease-in-out infinite 1.5s;
-  opacity: 0;
 }
 
 /* Animation for Logo */
@@ -347,30 +326,6 @@ ul li .a2:hover:before {
   }
   50% {
       transform: translateY(-23px);
-  }
-}
-
-/* Animation for second photo (slide from top) */
-@keyframes slideFromTop {
-  0% {
-      transform: translateY(-100%);
-      opacity: 0;
-  }
-  100% {
-      transform: translateY(0);
-      opacity: 1;
-  }
-}
-
-/* Animation for third photo (slide from bottom) */
-@keyframes slideFromBottom {
-  0% {
-      transform: translateY(100%);
-      opacity: 0;
-  }
-  100% {
-      transform: translateY(0);
-      opacity: 1;
   }
 }
 
@@ -401,11 +356,6 @@ ul li .a2:hover:before {
     width: 336px;
   }
   
-  .hlogoo, .hlogooo {
-    height: 280px;
-    width: 176px;
-  }
-  
   .background-section {
     height: 150%;
   }
@@ -416,11 +366,6 @@ ul li .a2:hover:before {
   .hlogo {
     height: 490px;
     width: 294px;
-  }
-  
-  .hlogoo, .hlogooo {
-    height: 245px;
-    width: 154px;
   }
 }
 
@@ -442,11 +387,6 @@ ul li .a2:hover:before {
   .hlogo {
     height: 420px;
     width: 252px;
-  }
-  
-  .hlogoo, .hlogooo {
-    height: 210px;
-    width: 132px;
   }
   
   .background-section {
@@ -480,13 +420,6 @@ ul li .a2:hover:before {
     width: 210px;
   }
   
-  .hlogoo, .hlogooo {
-    height: 125px;
-    width: 110px;
-    margin-right: -55px;
-    margin-left: -55px;
-  }
-  
   .background-section {
     height: 130%;
   }
@@ -497,13 +430,6 @@ ul li .a2:hover:before {
   .hlogo {
     height: 300px;
     width: 180px;
-  }
-  
-  .hlogoo, .hlogooo {
-    height: 150px;
-    width: 94px;
-    margin-right: -47px;
-    margin-left: -47px;
   }
 }
 
