@@ -185,11 +185,13 @@ ul li .a2:hover:before {
 
 /*--------------- Home Section ---------------------*/
 .home {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  padding: 20px;
 }
 
 .background-section {
@@ -209,93 +211,98 @@ ul li .a2:hover:before {
   color: #ffffff;
 }
 
+.hometext h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
 .hometext p {
-    font-size: 75%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    margin-right: 100px;
-    color: #ffffff;
+  font-size: 1rem;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-right: 100px;
+  color: #ffffff;
 }
 
 .homebtn {
-    padding-top: 2%;
-    display: flex;
-    gap: 20px;
+  padding-top: 2%;
+  display: flex;
+  gap: 20px;
 }
 
 /* Primary Button - Download Now */
 .homebtn1 {
-    background: linear-gradient(135deg, #196AB3, #3176b2);
-    color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 30px;
-    width: 200px;
-    height: 55px;
-    font-size: 15px;
-    font-weight: bold;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    transition: 0.3s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: linear-gradient(135deg, #196AB3, #3176b2);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 30px;
+  width: 200px;
+  height: 55px;
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .homebtn1:hover {
-    cursor: pointer;
-    background: linear-gradient(135deg, #3176b2, #196AB3);
-    transform: scale(1.05);
+  cursor: pointer;
+  background: linear-gradient(135deg, #3176b2, #196AB3);
+  transform: scale(1.05);
 }
 
 /* Secondary Button - Learn More */
 .homebtn2 {
-    background-color: #ffffff;
-    border: 2px solid #196AB3;
-    color: #196AB3;
-    border-radius: 30px;
-    width: 150px;
-    height: 50px;
-    font-size: 16px;
-    font-weight: bold;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
-    transition: 0.3s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: #ffffff;
+  border: 2px solid #196AB3;
+  color: #196AB3;
+  border-radius: 30px;
+  width: 150px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .homebtn2:hover {
-    cursor: pointer;
-    background-color: #196AB3;
-    color: white;
-    transform: scale(1.05);
+  cursor: pointer;
+  background-color: #196AB3;
+  color: white;
+  transform: scale(1.05);
 }
 
 /* Button Links */
 .homebtn1 a,
 .homebtn2 a {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    line-height: 50px;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
 }
 
 .btna1 {
-    font-size: 120%;
-    font-weight: bold;
-    color: #fff;
+  font-size: 120%;
+  font-weight: bold;
+  color: #fff;
 }
 
 .btna2 {
-    font-size: 90%;
-    font-weight: bold;
-    color: #196AB3;
+  font-size: 90%;
+  font-weight: bold;
+  color: #196AB3;
 }
 
 .btna2:hover {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 /* Home Logo */
@@ -313,17 +320,16 @@ ul li .a2:hover:before {
 .hlogo, .hlogoo, .hlogooo {
   animation: float 3s ease-in-out infinite;
   position: relative;
+  height: 350px; /* Fixed height */
+  width: auto; /* Adjust width automatically */
+  object-fit: cover; /* Maintain aspect ratio */
 }
 
 .hlogo {
-  height: 700px;
-  width: 420px;
   z-index: 2;
 }
 
 .hlogoo {
-  height: 350px;
-  width: 220px;
   margin-right: -110px;
   z-index: 1;
   animation: slideFromTop 1.5s ease-out forwards, float 3s ease-in-out infinite 1.5s;
@@ -331,8 +337,6 @@ ul li .a2:hover:before {
 }
 
 .hlogooo {
-  height: 350px;
-  width: 220px;
   margin-left: -110px;
   z-index: 1;
   animation: slideFromBottom 1.5s ease-out forwards, float 3s ease-in-out infinite 1.5s;
@@ -342,34 +346,34 @@ ul li .a2:hover:before {
 /* Animation for Logo */
 @keyframes float {
   0%, 100% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
   50% {
-      transform: translateY(-23px);
+    transform: translateY(-23px);
   }
 }
 
 /* Animation for second photo (slide from top) */
 @keyframes slideFromTop {
   0% {
-      transform: translateY(-100%);
-      opacity: 0;
+    transform: translateY(-100%);
+    opacity: 0;
   }
   100% {
-      transform: translateY(0);
-      opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
 /* Animation for third photo (slide from bottom) */
 @keyframes slideFromBottom {
   0% {
-      transform: translateY(100%);
-      opacity: 0;
+    transform: translateY(100%);
+    opacity: 0;
   }
   100% {
-      transform: translateY(0);
-      opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -380,31 +384,33 @@ ul li .a2:hover:before {
   .home {
     flex-direction: column;
   }
-  
+
   .hometext {
     padding-left: 40px;
     padding-right: 40px;
     text-align: center;
   }
-  
+
   .hometext p {
     margin-right: 0;
   }
-  
+
   .homebtn {
     justify-content: center;
   }
-  
-  .hlogo {
-    height: 560px;
-    width: 336px;
+
+  .hlogo, .hlogoo, .hlogooo {
+    height: 280px; /* Adjusted height */
   }
-  
-  .hlogoo, .hlogooo {
-    height: 280px;
-    width: 176px;
+
+  .hlogoo {
+    margin-right: -88px;
   }
-  
+
+  .hlogooo {
+    margin-left: -88px;
+  }
+
   .background-section {
     height: 150%;
   }
@@ -412,42 +418,46 @@ ul li .a2:hover:before {
 
 /* Medium tablets */
 @media screen and (max-width: 992px) {
-  .hlogo {
-    height: 490px;
-    width: 294px;
+  .hlogo, .hlogoo, .hlogooo {
+    height: 240px; /* Adjusted height */
   }
-  
-  .hlogoo, .hlogooo {
-    height: 245px;
-    width: 154px;
+
+  .hlogoo {
+    margin-right: -75px;
+  }
+
+  .hlogooo {
+    margin-left: -75px;
   }
 }
 
 /* Small tablets */
 @media screen and (max-width: 768px) {
-  .hometext h1 {
+  .hometext h2 {
     font-size: 28px;
   }
-  
+
   .hometext p {
     font-size: 70%;
   }
-  
+
   .homebtn {
     flex-direction: column;
     align-items: center;
   }
-  
-  .hlogo {
-    height: 420px;
-    width: 252px;
+
+  .hlogo, .hlogoo, .hlogooo {
+    height: 200px; /* Adjusted height */
   }
-  
-  .hlogoo, .hlogooo {
-    height: 210px;
-    width: 132px;
+
+  .hlogoo {
+    margin-right: -62px;
   }
-  
+
+  .hlogooo {
+    margin-left: -62px;
+  }
+
   .background-section {
     height: 140%;
     clip-path: ellipse(150% 55% at 50% 0%);
@@ -460,32 +470,32 @@ ul li .a2:hover:before {
     padding-left: 20px;
     padding-right: 20px;
   }
-  
-  .hometext h1 {
+
+  .hometext h2 {
     font-size: 24px;
   }
-  
+
   .hometext p {
     font-size: 65%;
   }
-  
+
   .homebtn1, .homebtn2 {
     width: 80%;
     max-width: 200px;
   }
-  
-  .hlogo {
-    height: 350px;
-    width: 210px;
+
+  .hlogo, .hlogoo, .hlogooo {
+    height: 160px; /* Adjusted height */
   }
-  
-  .hlogoo, .hlogooo {
-    height: 175px;
-    width: 110px;
-    margin-right: -55px;
-    margin-left: -55px;
+
+  .hlogoo {
+    margin-right: -50px;
   }
-  
+
+  .hlogooo {
+    margin-left: -50px;
+  }
+
   .background-section {
     height: 130%;
   }
@@ -493,16 +503,16 @@ ul li .a2:hover:before {
 
 /* Small mobile phones */
 @media screen and (max-width: 375px) {
-  .hlogo {
-    height: 300px;
-    width: 180px;
+  .hlogo, .hlogoo, .hlogooo {
+    height: 140px; /* Adjusted height */
   }
-  
-  .hlogoo, .hlogooo {
-    height: 150px;
-    width: 94px;
-    margin-right: -47px;
-    margin-left: -47px;
+
+  .hlogoo {
+    margin-right: -43px;
+  }
+
+  .hlogooo {
+    margin-left: -43px;
   }
 }
 
