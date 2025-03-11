@@ -508,14 +508,12 @@ ul li .a2:hover:before {
     margin-top: 30px; /* Adjusted for smaller screens */
   }
   
-  .hlogo, .hlogoo, .hlogooo {
+  .hlogoo, .hlogooo {
     height: 150px; /* All logos have the same height */
     margin-top: 15px; /* Slightly less spacing for smaller screens */
   }
   
-  .hlogo {
-    width: 100px; /* Adjusted width to maintain aspect ratio */
-  }
+ 
   
   .hlogoo {
     width: 100px;
