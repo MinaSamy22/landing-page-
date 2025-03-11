@@ -138,14 +138,15 @@ header h4 {
     margin-left: 15px;
 }
 
+/* Navigation link styling - increase font weight */
 .main-nav li a:link,
 .main-nav li a:visited {
     padding: 5px 4px;
-    color: #196AB3;  /*da 3shan lon elklam elgwa el navbar*/
+    color: #196AB3;
     text-decoration: none;
-    font-weight: 110;
+    font-weight: 600;    /* Changed from 110 to 600 for bolder text */
     font-size: 85%;
-    transition:  0.5s;
+    transition: 0.5s;
 }
 
 ul:hover li .a2 {
