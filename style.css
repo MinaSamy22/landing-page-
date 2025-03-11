@@ -323,18 +323,18 @@ ul li .a2:hover:before {
 }
 
 .hlogoo {
-  height: 700px; /* Updated to match .hlogo */
-  width: 420px;  /* Updated to match .hlogo */
-  margin-right: -110px; /* Adjusted margin for overlap */
+  height: 350px;
+  width: 220px;
+  margin-right: -110px;
   z-index: 1;
   animation: slideFromTop 1.5s ease-out forwards, float 3s ease-in-out infinite 1.5s;
   opacity: 0;
 }
 
 .hlogooo {
-  height: 700px; /* Updated to match .hlogo */
-  width: 420px;  /* Updated to match .hlogo */
-  margin-left: -110px; /* Adjusted margin for overlap */
+  height: 350px;
+  width: 220px;
+  margin-left: -110px;
   z-index: 1;
   animation: slideFromBottom 1.5s ease-out forwards, float 3s ease-in-out infinite 1.5s;
   opacity: 0;
@@ -402,8 +402,8 @@ ul li .a2:hover:before {
   }
   
   .hlogoo, .hlogooo {
-    height: 560px; /* Updated to match .hlogo */
-    width: 336px;  /* Updated to match .hlogo */
+    height: 280px;
+    width: 176px;
   }
   
   .background-section {
@@ -419,8 +419,8 @@ ul li .a2:hover:before {
   }
   
   .hlogoo, .hlogooo {
-    height: 490px; /* Updated to match .hlogo */
-    width: 294px;  /* Updated to match .hlogo */
+    height: 245px;
+    width: 154px;
   }
 }
 
@@ -445,8 +445,8 @@ ul li .a2:hover:before {
   }
   
   .hlogoo, .hlogooo {
-    height: 420px; /* Updated to match .hlogo */
-    width: 252px;  /* Updated to match .hlogo */
+    height: 210px;
+    width: 132px;
   }
   
   .background-section {
@@ -481,8 +481,8 @@ ul li .a2:hover:before {
   }
   
   .hlogoo, .hlogooo {
-    height: 350px; /* Updated to match .hlogo */
-    width: 210px;  /* Updated to match .hlogo */
+    height: 175px;
+    width: 110px;
     margin-right: -55px;
     margin-left: -55px;
   }
@@ -500,8 +500,8 @@ ul li .a2:hover:before {
   }
   
   .hlogoo, .hlogooo {
-    height: 300px; /* Updated to match .hlogo */
-    width: 180px;  /* Updated to match .hlogo */
+    height: 150px;
+    width: 94px;
     margin-right: -47px;
     margin-left: -47px;
   }
