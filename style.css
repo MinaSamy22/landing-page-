@@ -34,7 +34,7 @@
     position: absolute;
     width: 25px;
     height: 3px;
-    background-color: #000000;
+    background-color: #196AB3;
     transition: all 0.3s ease;
 }
 
@@ -86,7 +86,7 @@
     }
 
     .main-nav li a {
-        font-size: 25px; /* Increase font size for better readability */
+        font-size: 5px; /* Increase font size for better readability */
     }
 }
 
