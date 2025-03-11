@@ -313,14 +313,17 @@ ul li .a2:hover:before {
 .hlogo, .hlogoo, .hlogooo {
   animation: float 3s ease-in-out infinite;
   position: relative;
-  /* Make all images the same size */
-  height: 350px;
-  width: 220px;
+}
+
+.hlogo {
+  height: 700px;
+  width: 420px;
   z-index: 2;
 }
 
-/* Specific positioning for side images */
 .hlogoo {
+  height: 350px;
+  width: 220px;
   margin-right: -110px;
   z-index: 1;
   animation: slideFromTop 1.5s ease-out forwards, float 3s ease-in-out infinite 1.5s;
@@ -328,6 +331,8 @@ ul li .a2:hover:before {
 }
 
 .hlogooo {
+  height: 350px;
+  width: 220px;
   margin-left: -110px;
   z-index: 1;
   animation: slideFromBottom 1.5s ease-out forwards, float 3s ease-in-out infinite 1.5s;
@@ -390,7 +395,12 @@ ul li .a2:hover:before {
     justify-content: center;
   }
   
-  .hlogo, .hlogoo, .hlogooo {
+  .hlogo {
+    height: 560px;
+    width: 336px;
+  }
+  
+  .hlogoo, .hlogooo {
     height: 280px;
     width: 176px;
   }
@@ -402,7 +412,12 @@ ul li .a2:hover:before {
 
 /* Medium tablets */
 @media screen and (max-width: 992px) {
-  .hlogo, .hlogoo, .hlogooo {
+  .hlogo {
+    height: 490px;
+    width: 294px;
+  }
+  
+  .hlogoo, .hlogooo {
     height: 245px;
     width: 154px;
   }
@@ -423,7 +438,12 @@ ul li .a2:hover:before {
     align-items: center;
   }
   
-  .hlogo, .hlogoo, .hlogooo {
+  .hlogo {
+    height: 420px;
+    width: 252px;
+  }
+  
+  .hlogoo, .hlogooo {
     height: 210px;
     width: 132px;
   }
@@ -454,17 +474,15 @@ ul li .a2:hover:before {
     max-width: 200px;
   }
   
-  .hlogo, .hlogoo, .hlogooo {
+  .hlogo {
+    height: 350px;
+    width: 210px;
+  }
+  
+  .hlogoo, .hlogooo {
     height: 175px;
     width: 110px;
-  }
-  
-  /* Adjust overlap margins for smaller screens */
-  .hlogoo {
     margin-right: -55px;
-  }
-  
-  .hlogooo {
     margin-left: -55px;
   }
   
@@ -475,17 +493,15 @@ ul li .a2:hover:before {
 
 /* Small mobile phones */
 @media screen and (max-width: 375px) {
-  .hlogo, .hlogoo, .hlogooo {
+  .hlogo {
+    height: 300px;
+    width: 180px;
+  }
+  
+  .hlogoo, .hlogooo {
     height: 150px;
     width: 94px;
-  }
-  
-  /* Adjust overlap margins for very small screens */
-  .hlogoo {
     margin-right: -47px;
-  }
-  
-  .hlogooo {
     margin-left: -47px;
   }
 }
