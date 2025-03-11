@@ -323,7 +323,7 @@ ul li .a2:hover:before {
 }
 
 .hlogoo {
-  height: 750px;
+  height: 350px;
   width: 220px;
   margin-right: -110px;
   z-index: 1;
@@ -396,13 +396,12 @@ ul li .a2:hover:before {
     justify-content: center;
   }
   
-  .hlogo {
-    height: 960px;
-    width: 336px;
+  /* Hide all three logo images on responsive layouts */
+  .hlogo, .hlogoo, .hlogooo {
+    display: none;
   }
   
-  /* Hide secondary logo images on responsive layouts */
-  .hlogoo, .hlogooo {
+  .homelogo {
     display: none;
   }
   
@@ -413,9 +412,10 @@ ul li .a2:hover:before {
 
 /* Medium tablets */
 @media screen and (max-width: 992px) {
-  .hlogo {
-    height: 990px;
-    width: 294px;
+  /* Logo styles removed since they're now hidden */
+  
+  .background-section {
+    height: 140%;
   }
 }
 
@@ -432,11 +432,6 @@ ul li .a2:hover:before {
   .homebtn {
     flex-direction: column;
     align-items: center;
-  }
-  
-  .hlogo {
-    height: 920px;
-    width: 252px;
   }
   
   .background-section {
@@ -465,11 +460,6 @@ ul li .a2:hover:before {
     max-width: 200px;
   }
   
-  .hlogo {
-    height: 750px;
-    width: 210px;
-  }
-  
   .background-section {
     height: 130%;
   }
@@ -477,10 +467,7 @@ ul li .a2:hover:before {
 
 /* Small mobile phones */
 @media screen and (max-width: 375px) {
-  .hlogo {
-    height: 700px;
-    width: 180px;
-  }
+  /* Logo styles removed since they're now hidden */
 }
 
 /*--------------- Features Section ---------------------*/
