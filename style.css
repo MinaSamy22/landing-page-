@@ -395,9 +395,12 @@ ul li .a2:hover:before {
     justify-content: center;
   }
   
-
+  .hlogo {
+    height: 560px;
+    width: 336px;
+  }
   
-  .hlogoo, .hlogooo, .hlogo {
+  .hlogoo, .hlogooo {
     height: 280px;
     width: 176px;
   }
@@ -409,9 +412,12 @@ ul li .a2:hover:before {
 
 /* Medium tablets */
 @media screen and (max-width: 992px) {
-
+  .hlogo {
+    height: 490px;
+    width: 294px;
+  }
   
-  .hlogoo, .hlogooo, .hlogo {
+  .hlogoo, .hlogooo {
     height: 245px;
     width: 154px;
   }
@@ -432,9 +438,12 @@ ul li .a2:hover:before {
     align-items: center;
   }
   
-
+  .hlogo {
+    height: 420px;
+    width: 252px;
+  }
   
-  .hlogoo, .hlogooo, .hlogo {
+  .hlogoo, .hlogooo {
     height: 210px;
     width: 132px;
   }
@@ -465,8 +474,12 @@ ul li .a2:hover:before {
     max-width: 200px;
   }
   
+  .hlogo {
+    height: 350px;
+    width: 210px;
+  }
   
-  .hlogoo, .hlogooo, .hlogo {
+  .hlogoo, .hlogooo {
     height: 175px;
     width: 110px;
     margin-right: -55px;
@@ -479,9 +492,13 @@ ul li .a2:hover:before {
 }
 
 /* Small mobile phones */
-
+@media screen and (max-width: 375px) {
+  .hlogo {
+    height: 300px;
+    width: 180px;
+  }
   
-  .hlogoo, .hlogooo, .hlogo {
+  .hlogoo, .hlogooo {
     height: 150px;
     width: 94px;
     margin-right: -47px;
