@@ -184,6 +184,13 @@ ul li .a2:hover:before {
     transform: scaleX(1);
 }
 
+/*----------------Basic setup---------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /*--------------- Home Section ---------------------*/
 .home {
     display: flex;
@@ -396,13 +403,14 @@ ul li .a2:hover:before {
     justify-content: center;
   }
   
-  /* Hide all three logo images on responsive layouts */
-  .hlogo, .hlogoo, .hlogooo {
-    display: none;
+  .hlogo {
+    height: 560px;
+    width: 336px;
   }
   
-  .homelogo {
-    display: none;
+  .hlogoo, .hlogooo {
+    height: 280px;
+    width: 176px;
   }
   
   .background-section {
@@ -412,10 +420,14 @@ ul li .a2:hover:before {
 
 /* Medium tablets */
 @media screen and (max-width: 992px) {
-  /* Logo styles removed since they're now hidden */
+  .hlogo {
+    height: 490px;
+    width: 294px;
+  }
   
-  .background-section {
-    height: 140%;
+  .hlogoo, .hlogooo {
+    height: 245px;
+    width: 154px;
   }
 }
 
@@ -434,6 +446,16 @@ ul li .a2:hover:before {
     align-items: center;
   }
   
+  .hlogo {
+    height: 420px;
+    width: 252px;
+  }
+  
+  .hlogoo, .hlogooo {
+    height: 210px;
+    width: 132px;
+  }
+  
   .background-section {
     height: 140%;
     clip-path: ellipse(150% 55% at 50% 0%);
@@ -442,29 +464,52 @@ ul li .a2:hover:before {
 
 /* Mobile phones */
 @media screen and (max-width: 576px) {
-  .homelogo {
-    flex-direction: column; /* Stack images vertically on mobile */
-    align-items: center; /* Center-align images */
-    gap: 20px; /* Add spacing between images */
+  .hometext {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .hometext h1 {
+    font-size: 24px;
+  }
+  
+  .hometext p {
+    font-size: 65%;
+  }
+  
+  .homebtn1, .homebtn2 {
+    width: 80%;
+    max-width: 200px;
+  }
+  
+  .homelogo img {
+    height: 200px; /* Fixed height for all images */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure images cover the area without distortion */
   }
 
   .hlogo, .hlogoo, .hlogooo {
-    height: 200px; /* Set a fixed height for all images */
-    width: auto; /* Maintain aspect ratio */
     margin: 0; /* Remove negative margins */
-    animation: none; /* Disable animations for simplicity */
+    animation: none; /* Disable animations for mobile */
   }
 
-  .hlogoo, .hlogooo {
-    opacity: 1; /* Ensure all images are visible */
+  .homelogo {
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center images horizontally */
+    gap: 10px; /* Add spacing between images */
+  }
+  
+  .background-section {
+    height: 130%;
   }
 }
 
 /* Small mobile phones */
 @media screen and (max-width: 375px) {
-  /* Logo styles removed since they're now hidden */
+  .homelogo img {
+    height: 180px; /* Adjust height for smaller devices */
+  }
 }
-
 /*--------------- Features Section ---------------------*/
 .features {
     background-color: #ffffff; /* Light background for contrast */
