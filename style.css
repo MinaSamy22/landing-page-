@@ -476,8 +476,8 @@ ul li .a2:hover:before {
   }
   
   .hlogo {
-    height: 350px;
-    width: 210px;
+    height: 175px; /* Adjusted to match the height of hlogoo and hlogooo */
+    width: auto; /* Maintain aspect ratio */
   }
   
   .hlogoo, .hlogooo {
@@ -495,8 +495,8 @@ ul li .a2:hover:before {
 /* Small mobile phones */
 @media screen and (max-width: 375px) {
   .hlogo {
-    height: 300px;
-    width: 180px;
+    height: 150px; /* Adjusted to match the height of hlogoo and hlogooo */
+    width: auto; /* Maintain aspect ratio */
   }
   
   .hlogoo, .hlogooo {
