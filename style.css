@@ -313,17 +313,16 @@ ul li .a2:hover:before {
 .hlogo, .hlogoo, .hlogooo {
   animation: float 3s ease-in-out infinite;
   position: relative;
+  /* Make all images the same size */
+  height: 350px;
+  width: 220px;
 }
 
 .hlogo {
-  height: 800px; /* Increased from 700px */
-  width: 480px; /* Increased proportionally */
   z-index: 2;
 }
 
 .hlogoo {
-  height: 350px;
-  width: 220px;
   margin-right: -110px;
   z-index: 1;
   animation: slideFromTop 1.5s ease-out forwards, float 3s ease-in-out infinite 1.5s;
@@ -331,8 +330,6 @@ ul li .a2:hover:before {
 }
 
 .hlogooo {
-  height: 350px;
-  width: 220px;
   margin-left: -110px;
   z-index: 1;
   animation: slideFromBottom 1.5s ease-out forwards, float 3s ease-in-out infinite 1.5s;
@@ -395,14 +392,17 @@ ul li .a2:hover:before {
     justify-content: center;
   }
   
-  .hlogo {
-    height: 640px; /* Increased proportionally */
-    width: 384px; /* Increased proportionally */
-  }
-  
-  .hlogoo, .hlogooo {
+  .hlogo, .hlogoo, .hlogooo {
     height: 280px;
     width: 176px;
+  }
+  
+  .hlogoo {
+    margin-right: -88px;
+  }
+  
+  .hlogooo {
+    margin-left: -88px;
   }
   
   .background-section {
@@ -412,14 +412,17 @@ ul li .a2:hover:before {
 
 /* Medium tablets */
 @media screen and (max-width: 992px) {
-  .hlogo {
-    height: 560px; /* Increased proportionally */
-    width: 336px; /* Increased proportionally */
+  .hlogo, .hlogoo, .hlogooo {
+    height: 240px;
+    width: 150px;
   }
   
-  .hlogoo, .hlogooo {
-    height: 245px;
-    width: 154px;
+  .hlogoo {
+    margin-right: -75px;
+  }
+  
+  .hlogooo {
+    margin-left: -75px;
   }
 }
 
@@ -438,14 +441,17 @@ ul li .a2:hover:before {
     align-items: center;
   }
   
-  .hlogo {
-    height: 480px; /* Increased proportionally */
-    width: 288px; /* Increased proportionally */
+  .hlogo, .hlogoo, .hlogooo {
+    height: 200px;
+    width: 125px;
   }
   
-  .hlogoo, .hlogooo {
-    height: 210px;
-    width: 132px;
+  .hlogoo {
+    margin-right: -62px;
+  }
+  
+  .hlogooo {
+    margin-left: -62px;
   }
   
   .background-section {
@@ -474,16 +480,17 @@ ul li .a2:hover:before {
     max-width: 200px;
   }
   
-  .hlogo {
-    height: 400px; /* Increased proportionally */
-    width: 240px; /* Increased proportionally */
+  .hlogo, .hlogoo, .hlogooo {
+    height: 160px;
+    width: 100px;
   }
   
-  .hlogoo, .hlogooo {
-    height: 50px;
-    width: 110px;
-    margin-right: -55px;
-    margin-left: -55px;
+  .hlogoo {
+    margin-right: -50px;
+  }
+  
+  .hlogooo {
+    margin-left: -50px;
   }
   
   .background-section {
@@ -493,16 +500,17 @@ ul li .a2:hover:before {
 
 /* Small mobile phones */
 @media screen and (max-width: 375px) {
-  .hlogo {
-    height: 500px; /* Increased proportionally */
-    width: 204px; /* Increased proportionally */
+  .hlogo, .hlogoo, .hlogooo {
+    height: 140px;
+    width: 87px;
   }
   
-  .hlogoo, .hlogooo {
-    height: 150px;
-    width: 94px;
-    margin-right: -47px;
-    margin-left: -47px;
+  .hlogoo {
+    margin-right: -43px;
+  }
+  
+  .hlogooo {
+    margin-left: -43px;
   }
 }
 
