@@ -455,7 +455,7 @@ ul li .a2:hover:before {
   }
 }
 
-/* Mobile phones - MODIFIED */
+/* Mobile phones */
 @media screen and (max-width: 576px) {
   .hometext {
     padding-left: 20px;
@@ -475,28 +475,16 @@ ul li .a2:hover:before {
     max-width: 200px;
   }
   
-  /* Make all logos the same height and remove animations */
-  .hlogo, .hlogoo, .hlogooo {
-    height: 250px;
-    width: auto;
-    animation: none;
-    opacity: 1;
-    transform: none;
-  }
-  
   .hlogo {
-    width: 110px;
-    z-index: 2;
+    height: 350px;
+    width: 210px;
   }
   
-  .hlogoo {
+  .hlogoo, .hlogooo {
+    height: 175px;
     width: 110px;
-    margin-right: -40px;
-  }
-  
-  .hlogooo {
-    width: 110px;
-    margin-left: -40px;
+    margin-right: -55px;
+    margin-left: -55px;
   }
   
   .background-section {
@@ -506,25 +494,16 @@ ul li .a2:hover:before {
 
 /* Small mobile phones */
 @media screen and (max-width: 375px) {
-  /* Keep all logos the same height */
-  .hlogo, .hlogoo, .hlogooo {
-    height: 200px;
-  }
-  
   .hlogo {
-    width: 90px;
+    height: 300px;
+    width: 180px;
   }
   
   .hlogoo, .hlogooo {
-    width: 95px;
-  }
-  
-  .hlogoo {
-    margin-right: -25px;
-  }
-  
-  .hlogooo {
-    margin-left: -25px;
+    height: 150px;
+    width: 94px;
+    margin-right: -47px;
+    margin-left: -47px;
   }
 }
 
