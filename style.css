@@ -87,27 +87,6 @@
 
     .main-nav li a {
         font-size: 25px; /* Increase font size for better readability */
-        font-weight: 900; /* Make text bolder (700 is bold) */
-        letter-spacing: 0.5px; /* Add slight letter spacing for better readability */
-    }
-    
-    /* Make the hover state stand out more */
-    ul li .a2:hover {
-        transform: scale(1.1); /* Reduced the scale for mobile to make it more usable */
-        font-weight: 900; /* Extra bold on hover */
-        color: #000000;
-    }
-    
-    /* Reduce blur effect on mobile for better readability */
-    ul:hover li .a2 {
-        transform: scale(1.05);
-        opacity: 0.9;
-        filter: blur(2px); /* Reduced blur effect */
-    }
-    
-    /* Make hover background more pronounced */
-    ul li .a2:before {
-        background: #5ba3e6; /* Slightly darker blue for better contrast */
     }
 }
 
