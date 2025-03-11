@@ -476,8 +476,8 @@ ul li .a2:hover:before {
   }
   
   .hlogo {
-    height: 350px;
-    width: 210px;
+    height: 175px;  /* Changed from 350px to match .hlogoo and .hlogooo */
+    width: 105px;   /* Adjusted width proportionally to maintain aspect ratio */
   }
   
   .hlogoo, .hlogooo {
