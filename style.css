@@ -316,12 +316,10 @@ ul li .a2:hover:before {
   /* Make all images the same size */
   height: 350px;
   width: 220px;
-}
-
-.hlogo {
   z-index: 2;
 }
 
+/* Specific positioning for side images */
 .hlogoo {
   margin-right: -110px;
   z-index: 1;
@@ -397,14 +395,6 @@ ul li .a2:hover:before {
     width: 176px;
   }
   
-  .hlogoo {
-    margin-right: -88px;
-  }
-  
-  .hlogooo {
-    margin-left: -88px;
-  }
-  
   .background-section {
     height: 150%;
   }
@@ -413,16 +403,8 @@ ul li .a2:hover:before {
 /* Medium tablets */
 @media screen and (max-width: 992px) {
   .hlogo, .hlogoo, .hlogooo {
-    height: 240px;
-    width: 150px;
-  }
-  
-  .hlogoo {
-    margin-right: -75px;
-  }
-  
-  .hlogooo {
-    margin-left: -75px;
+    height: 245px;
+    width: 154px;
   }
 }
 
@@ -442,16 +424,8 @@ ul li .a2:hover:before {
   }
   
   .hlogo, .hlogoo, .hlogooo {
-    height: 200px;
-    width: 125px;
-  }
-  
-  .hlogoo {
-    margin-right: -62px;
-  }
-  
-  .hlogooo {
-    margin-left: -62px;
+    height: 210px;
+    width: 132px;
   }
   
   .background-section {
@@ -481,16 +455,17 @@ ul li .a2:hover:before {
   }
   
   .hlogo, .hlogoo, .hlogooo {
-    height: 160px;
-    width: 100px;
+    height: 175px;
+    width: 110px;
   }
   
+  /* Adjust overlap margins for smaller screens */
   .hlogoo {
-    margin-right: -50px;
+    margin-right: -55px;
   }
   
   .hlogooo {
-    margin-left: -50px;
+    margin-left: -55px;
   }
   
   .background-section {
@@ -501,16 +476,17 @@ ul li .a2:hover:before {
 /* Small mobile phones */
 @media screen and (max-width: 375px) {
   .hlogo, .hlogoo, .hlogooo {
-    height: 140px;
-    width: 87px;
+    height: 150px;
+    width: 94px;
   }
   
+  /* Adjust overlap margins for very small screens */
   .hlogoo {
-    margin-right: -43px;
+    margin-right: -47px;
   }
   
   .hlogooo {
-    margin-left: -43px;
+    margin-left: -47px;
   }
 }
 
