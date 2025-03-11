@@ -476,13 +476,13 @@ ul li .a2:hover:before {
   }
   
   .hlogo {
-    height: 450px;
+    height: 350px;
     width: 210px;
   }
   
   .hlogoo, .hlogooo {
-    height: 105px;
-    width: 110px;
+    height: 175px;
+    width: 140px;
     margin-right: -55px;
     margin-left: -55px;
   }
@@ -495,13 +495,13 @@ ul li .a2:hover:before {
 /* Small mobile phones */
 @media screen and (max-width: 375px) {
   .hlogo {
-    height: 400px;
+    height: 300px;
     width: 180px;
   }
   
   .hlogoo, .hlogooo {
-    height: 100px;
-    width: 94px;
+    height: 150px;
+    width: 100px;
     margin-right: -47px;
     margin-left: -47px;
   }
