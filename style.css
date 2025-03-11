@@ -316,8 +316,8 @@ ul li .a2:hover:before {
 }
 
 .hlogo {
-  height: 700px;
-  width: 420px;
+  height: 800px; /* Increased from 700px */
+  width: 480px; /* Increased proportionally */
   z-index: 2;
 }
 
@@ -396,8 +396,8 @@ ul li .a2:hover:before {
   }
   
   .hlogo {
-    height: 560px;
-    width: 336px;
+    height: 640px; /* Increased proportionally */
+    width: 384px; /* Increased proportionally */
   }
   
   .hlogoo, .hlogooo {
@@ -413,8 +413,8 @@ ul li .a2:hover:before {
 /* Medium tablets */
 @media screen and (max-width: 992px) {
   .hlogo {
-    height: 490px;
-    width: 294px;
+    height: 560px; /* Increased proportionally */
+    width: 336px; /* Increased proportionally */
   }
   
   .hlogoo, .hlogooo {
@@ -439,8 +439,8 @@ ul li .a2:hover:before {
   }
   
   .hlogo {
-    height: 420px;
-    width: 252px;
+    height: 480px; /* Increased proportionally */
+    width: 288px; /* Increased proportionally */
   }
   
   .hlogoo, .hlogooo {
@@ -475,13 +475,13 @@ ul li .a2:hover:before {
   }
   
   .hlogo {
-    height: 175px;
-    width: 210px;
+    height: 400px; /* Increased proportionally */
+    width: 240px; /* Increased proportionally */
   }
   
   .hlogoo, .hlogooo {
-    height: 50px;
-    width: 210px;
+    height: 175px;
+    width: 110px;
     margin-right: -55px;
     margin-left: -55px;
   }
@@ -494,8 +494,8 @@ ul li .a2:hover:before {
 /* Small mobile phones */
 @media screen and (max-width: 375px) {
   .hlogo {
-    height: 300px;
-    width: 180px;
+    height: 340px; /* Increased proportionally */
+    width: 204px; /* Increased proportionally */
   }
   
   .hlogoo, .hlogooo {
@@ -505,6 +505,7 @@ ul li .a2:hover:before {
     margin-left: -47px;
   }
 }
+
 /*--------------- Features Section ---------------------*/
 .features {
     background-color: #ffffff; /* Light background for contrast */
