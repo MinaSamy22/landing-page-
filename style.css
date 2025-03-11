@@ -477,7 +477,7 @@ ul li .a2:hover:before {
   
   /* Make all logos the same height and remove animations */
   .hlogo, .hlogoo, .hlogooo {
-    height: 175px;
+    height: 250px;
     width: auto;
     animation: none;
     opacity: 1;
@@ -485,7 +485,7 @@ ul li .a2:hover:before {
   }
   
   .hlogo {
-    width: 105px;
+    width: 110px;
     z-index: 2;
   }
   
@@ -508,7 +508,7 @@ ul li .a2:hover:before {
 @media screen and (max-width: 375px) {
   /* Keep all logos the same height */
   .hlogo, .hlogoo, .hlogooo {
-    height: 150px;
+    height: 200px;
   }
   
   .hlogo {
@@ -520,11 +520,11 @@ ul li .a2:hover:before {
   }
   
   .hlogoo {
-    margin-right: -45px;
+    margin-right: -25px;
   }
   
   .hlogooo {
-    margin-left: -45px;
+    margin-left: -25px;
   }
 }
 
