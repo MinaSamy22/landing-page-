@@ -1,3 +1,4 @@
+
 /*----------------Basic setup---------------------*/
 * {
     margin: 0;
@@ -735,6 +736,16 @@ ul li .a2:hover:before {
         gap: 15px;
     }
 }
+
+
+
+
+
+
+
+
+
+
 
 /*--------------- Mobile Responsiveness ---------------------*/
 @media screen and (max-width: 768px) {
