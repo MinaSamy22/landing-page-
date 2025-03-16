@@ -396,14 +396,13 @@ ul li .a2:hover:before {
     justify-content: center;
   }
   
-  .hlogo {
-    height: 560px;
-    width: 336px;
+  /* Hide all three logo images on responsive layouts */
+  .hlogo, .hlogoo, .hlogooo {
+    display: none;
   }
   
-  .hlogoo, .hlogooo {
-    height: 280px;
-    width: 176px;
+  .homelogo {
+    display: none;
   }
   
   .background-section {
@@ -413,14 +412,10 @@ ul li .a2:hover:before {
 
 /* Medium tablets */
 @media screen and (max-width: 992px) {
-  .hlogo {
-    height: 490px;
-    width: 294px;
-  }
+  /* Logo styles removed since they're now hidden */
   
-  .hlogoo, .hlogooo {
-    height: 245px;
-    width: 154px;
+  .background-section {
+    height: 140%;
   }
 }
 
@@ -437,16 +432,6 @@ ul li .a2:hover:before {
   .homebtn {
     flex-direction: column;
     align-items: center;
-  }
-  
-  .hlogo {
-    height: 420px;
-    width: 252px;
-  }
-  
-  .hlogoo, .hlogooo {
-    height: 210px;
-    width: 132px;
   }
   
   .background-section {
@@ -475,36 +460,14 @@ ul li .a2:hover:before {
     max-width: 200px;
   }
   
-  .hlogo {
-    height: 350px;
-    width: 210px;
-  }
-  
-  .hlogoo, .hlogooo {
-    height: 175px;
-    width: 110px;
-    margin-right: -55px;
-    margin-left: -55px;
-  }
-  
   .background-section {
-    height: 130%;
+    height: 140%;
   }
 }
 
 /* Small mobile phones */
 @media screen and (max-width: 375px) {
-  .hlogo {
-    height: 300px;
-    width: 180px;
-  }
-  
-  .hlogoo, .hlogooo {
-    height: 150px;
-    width: 94px;
-    margin-right: -47px;
-    margin-left: -47px;
-  }
+  /* Logo styles removed since they're now hidden */
 }
 
 /*--------------- Features Section ---------------------*/
