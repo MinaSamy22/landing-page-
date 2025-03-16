@@ -187,12 +187,13 @@ ul li .a2:hover:before {
 /*--------------- Home Section ---------------------*/
 .home {
   display: flex;
-  flex-direction: row;
+  flex-direction: column; /* Stack content vertically */
   align-items: center;
   justify-content: center;
   width: 100%;
   position: relative;
   overflow: hidden; /* Prevent overflow issues */
+  padding-top: 20px; /* Add padding to separate images from the top */
 }
 
 .background-section {
@@ -206,17 +207,99 @@ ul li .a2:hover:before {
   z-index: -1;
 }
 
+/* Home Logo - Positioned at the top */
+.homelogo {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  gap: 0;
+  z-index: 2; /* Ensure images are above the background */
+}
+
+.hlogo,
+.hlogoo,
+.hlogooo {
+  animation: float 3s ease-in-out infinite;
+  position: relative;
+  border-radius: 15px; /* Rounded corners for modern look */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.hlogo {
+  height: 700px;
+  width: 420px;
+  z-index: 2;
+}
+
+.hlogoo {
+  height: 350px;
+  width: 220px;
+  margin-right: -110px;
+  z-index: 1;
+  animation: slideFromTop 1.5s ease-out forwards, float 3s ease-in-out infinite 1.5s;
+  opacity: 0;
+}
+
+.hlogooo {
+  height: 350px;
+  width: 220px;
+  margin-left: -110px;
+  z-index: 1;
+  animation: slideFromBottom 1.5s ease-out forwards, float 3s ease-in-out infinite 1.5s;
+  opacity: 0;
+}
+
+/* Animation for Logo */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-23px);
+  }
+}
+
+/* Animation for second photo (slide from top) */
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Animation for third photo (slide from bottom) */
+@keyframes slideFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Home Text and Buttons */
 .hometext {
   z-index: 1;
-  padding-left: 65px;
+  padding: 20px;
   color: #ffffff;
+  text-align: center; /* Center text for better alignment */
 }
 
 .hometext p {
   font-size: 75%;
   padding-top: 5%;
   padding-bottom: 5%;
-  margin-right: 100px;
+  margin-right: 0; /* Remove right margin for centered text */
   color: #ffffff;
 }
 
@@ -224,6 +307,7 @@ ul li .a2:hover:before {
   padding-top: 2%;
   display: flex;
   gap: 20px;
+  justify-content: center; /* Center buttons */
 }
 
 /* Primary Button - Download Now */
@@ -301,91 +385,11 @@ ul li .a2:hover:before {
   color: rgb(255, 255, 255);
 }
 
-/* Home Logo */
-.homelogo {
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-  position: relative;
-  gap: 0;
-}
-
-.hlogo,
-.hlogoo,
-.hlogooo {
-  animation: float 3s ease-in-out infinite;
-  position: relative;
-  border-radius: 15px; /* Rounded corners for modern look */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-}
-
-.hlogo {
-  height: 700px;
-  width: 420px;
-  z-index: 2;
-}
-
-.hlogoo {
-  height: 350px;
-  width: 220px;
-  margin-right: -110px;
-  z-index: 1;
-  animation: slideFromTop 1.5s ease-out forwards, float 3s ease-in-out infinite 1.5s;
-  opacity: 0;
-}
-
-.hlogooo {
-  height: 350px;
-  width: 220px;
-  margin-left: -110px;
-  z-index: 1;
-  animation: slideFromBottom 1.5s ease-out forwards, float 3s ease-in-out infinite 1.5s;
-  opacity: 0;
-}
-
-/* Animation for Logo */
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-23px);
-  }
-}
-
-/* Animation for second photo (slide from top) */
-@keyframes slideFromTop {
-  0% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-/* Animation for third photo (slide from bottom) */
-@keyframes slideFromBottom {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 /* Media Queries for Responsiveness */
 
 /* Large tablets */
 @media screen and (max-width: 1200px) {
   .home {
-    flex-direction: column;
     padding: 40px 20px;
     min-height: 100vh;
   }
