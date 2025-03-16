@@ -191,6 +191,7 @@ ul li .a2:hover:before {
     align-items: center;
     justify-content: center;
     width: 100%;
+    overflow: hidden; /* Prevent overflow issues */
 }
 
 .background-section {
@@ -380,12 +381,14 @@ ul li .a2:hover:before {
 @media screen and (max-width: 1200px) {
   .home {
     flex-direction: column;
+    padding: 40px 20px;
   }
   
   .hometext {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: center;
+    margin-bottom: 30px;
   }
   
   .hometext p {
@@ -396,32 +399,56 @@ ul li .a2:hover:before {
     justify-content: center;
   }
   
-  /* Hide all three logo images on responsive layouts */
-  .hlogo, .hlogoo, .hlogooo {
-    display: none;
+  .homelogo {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
   }
   
-  .homelogo {
-    display: none;
+  .hlogo {
+    height: 500px;
+    width: 300px;
+  }
+  
+  .hlogoo, .hlogooo {
+    height: 250px;
+    width: 150px;
   }
   
   .background-section {
-    height: 150%;
+    height: 180%;
   }
 }
 
 /* Medium tablets */
 @media screen and (max-width: 992px) {
-  /* Logo styles removed since they're now hidden */
+  .hlogo {
+    height: 400px;
+    width: 240px;
+  }
+  
+  .hlogoo, .hlogooo {
+    height: 200px;
+    width: 120px;
+  }
+  
+  .hlogoo {
+    margin-right: -60px;
+  }
+  
+  .hlogooo {
+    margin-left: -60px;
+  }
   
   .background-section {
-    height: 140%;
+    height: 160%;
   }
 }
 
 /* Small tablets */
 @media screen and (max-width: 768px) {
-  .hometext h1 {
+  .hometext h2 {
     font-size: 28px;
   }
   
@@ -432,27 +459,7 @@ ul li .a2:hover:before {
   .homebtn {
     flex-direction: column;
     align-items: center;
-  }
-  
-  .background-section {
-    height: 140%;
-    clip-path: ellipse(150% 55% at 50% 0%);
-  }
-}
-
-/* Mobile phones */
-@media screen and (max-width: 576px) {
-  .hometext {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  
-  .hometext h1 {
-    font-size: 24px;
-  }
-  
-  .hometext p {
-    font-size: 65%;
+    gap: 15px;
   }
   
   .homebtn1, .homebtn2 {
@@ -460,14 +467,85 @@ ul li .a2:hover:before {
     max-width: 200px;
   }
   
+  .homelogo {
+    transform: scale(0.8);
+    margin-top: 20px;
+  }
+  
   .background-section {
-    height: 140%;
+    height: 180%;
+    clip-path: ellipse(150% 55% at 50% 0%);
+  }
+}
+
+/* Mobile phones */
+@media screen and (max-width: 576px) {
+  .hometext {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .hometext h2 {
+    font-size: 24px;
+  }
+  
+  .hometext p {
+    font-size: 65%;
+  }
+  
+  /* Mobile-specific layout for images */
+  .homelogo {
+    flex-direction: column;
+    margin-top: 30px;
+    transform: scale(0.7);
+  }
+  
+  .hlogo {
+    height: 350px;
+    width: 210px;
+    margin-bottom: 20px;
+  }
+  
+  .hlogoo, .hlogooo {
+    position: absolute;
+    height: 180px;
+    width: 110px;
+  }
+  
+  .hlogoo {
+    top: 10%;
+    right: 50%;
+    margin-right: 120px;
+  }
+  
+  .hlogooo {
+    top: 10%;
+    left: 50%;
+    margin-left: 120px;
+  }
+  
+  .background-section {
+    height: 200%;
   }
 }
 
 /* Small mobile phones */
 @media screen and (max-width: 375px) {
-  /* Logo styles removed since they're now hidden */
+  .homelogo {
+    transform: scale(0.6);
+  }
+  
+  .hlogoo {
+    margin-right: 100px;
+  }
+  
+  .hlogooo {
+    margin-left: 100px;
+  }
+  
+  .background-section {
+    height: 220%;
+  }
 }
 
 /*--------------- Features Section ---------------------*/
